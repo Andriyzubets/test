@@ -596,7 +596,9 @@ input[type="submit"]:active {
     background: lightslategray;
     margin: 15px 0 0 0;
 }
-
+.smart-men {
+    display: none;
+}
 
 /* отзывчивость сайта */
  
@@ -606,7 +608,7 @@ input[type="submit"]:active {
 @media (max-width:990px){
     
 	h2 {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     }
     h3 {
         font-size: 2.4vw;
@@ -617,51 +619,67 @@ input[type="submit"]:active {
 }
 @media (max-width:900px){
 .text {
-    font-size: 7.3vw;
+    font-size: 8.3vw;
 
     }
+     .rightdiv {
+    display: none;
+    }
 .textUnder {
-    font-size: 1vw;
+    font-size: 1.1vw;
     }
     .midDiv {
-    font-size: 2.9vw;
-    }
-    .langPanel div {
-    font-size: 1.6vw;
+    font-size: 3.8vw;
     }
     .slider ul {
     width: 9000px;
+    }
+    .midDiv {
+    width: 47%;
+    }
+    .leftDiv {
+    margin: 1% 0 0 5%;
+    width: 38%;
     }
 }
 @media (max-width:768px){
     .navigate {
         display: none;
     }
-    .rightdiv {
-    display: none;
-    }
-    .smart-menu {
-    display: inline-block;
-    }
-    .midDiv {
-    width: 37%;
+    .leftDiv .text, .leftDiv .textUnder {
+        display: none;
     }
     .leftDiv {
-    margin: 1% 0 0 17%;
-    width: 38%;
+    margin: 1% 0 0 1%;
+    display: flex;
+    }
+    .leftDiv a {
+    }
+    .smart-men {
+    color: #fff;
+    font-size: 6.5vw;
+    display: inline-block;
+    align-self: center;
+    }
+    .midDiv {
+    font-size: 4.4vw;
+    width: 58%;
+    margin: 3% 0px 3.5% 0px;
     }
     .text {
     font-size: 7.3vw;
     }
+    .slider {
+        display: none;
+    }
     .logo {
-    width: 20%;
+    width: 100%;
+    transform: rotate(45deg);
     }
     .smart-menu .navigate1 {
         display: none;
     }
-    .slider ul {
-    width: 7680px;
-    }
+   
     /*.smart-menu:hover {
         display: block;
        background-image: none;
@@ -686,7 +704,13 @@ input[type="submit"]:active {
 @media (max-width:680px){
 }
 @media (max-width:506px){
-
+.logo {
+    width: 70%;
+    
+}
+.leftDiv {
+    width: 35%;
+}
 }
 @media (max-height:650px){
     
