@@ -88,6 +88,16 @@ $(window).scroll(function(e) {
   var height = $(this).scrollTop();
   $('.navigate1')[height >= 476 ? 'addClass' : 'removeClass']('active')
 });
+// smart-menu фиксация
+// $(function() {
+// 		var offset1 = $(".headTop").offset();
+// 		$(window).scroll(function() {
+// 			if ($(window).scrollTop() > 0%) {
+// 				$(".headTop").stop().animate({marginTop: $(window).scrollTop()},0);
+// 			}
+// 			else {$(".headTop").stop().animate({marginTop: 0});};
+// 		});
+// 	});
 // fancybox - всплывающие окна
 $(document).ready(function() {
 			$("a[rel ^= index]").fancybox({
